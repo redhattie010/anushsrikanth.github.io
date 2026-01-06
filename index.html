@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anush | DevOps Associate Consultant</title>
 
-  <!-- Cache control (prevents stale content) -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       background: #0b1120;
       color: #e5e7eb;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
@@ -24,13 +23,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
       background: linear-gradient(135deg, #1e40af, #020617);
+      padding: 40px;
+    }
+
+    .hero {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      max-width: 1100px;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
+      margin: 0;
     }
 
     h1 span {
@@ -38,91 +53,148 @@
     }
 
     section {
-      padding: 60px 10%;
+      padding: 70px 10%;
     }
 
     .title {
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #38bdf8;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: #020617;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 22px;
+      border-radius: 12px;
       border: 1px solid #1e293b;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .skills img {
+      width: 45px;
+      margin-bottom: 10px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
     }
 
     footer {
       background: #020617;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+      padding: 25px;
       border-top: 1px solid #1e293b;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 2.2rem; }
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div>
-    <h1>Hi, I'm <span>Anush</span></h1>
-    <p>DevOps Associate Consultant | Cloud & CI/CD Engineer</p>
+  <div class="hero">
+    <img src="profile.jpg" alt="Anush Profile Photo">
+    <div>
+      <h1>Hi, I'm <span>Anush</span></h1>
+      <p><b>DevOps Associate Consultant</b><br>
+      CI/CD · Jenkins · Docker · Kubernetes · Cloud · DevSecOps</p>
+
+      <a class="resume-btn" href="Anush-Srikanth-Resume.pdf" target="_blank">
+        📄 Download Resume
+      </a>
+    </div>
   </div>
 </header>
 
 <section>
   <div class="title">About Me</div>
-  <p>
-    Associate Consultant at <b>Intellect Design Arena Ltd</b>, focused on automating and optimizing
-    DevOps processes. Experienced in CI/CD pipelines, cloud platforms, containerization,
-    security integration, and Linux system operations.
-  </p>
-</section>
+  <div class="card">
+    🚀 DevOps Associate Consultant at <b>Intellect Design Arena Ltd</b>, contributing to the
+    automation and optimization of DevOps workflows to improve release efficiency and system reliability.<br><br>
 
-<section>
-  <div class="title">Core Skills</div>
-  <div class="grid">
-    <div class="card">CI/CD – Jenkins, GitLab</div>
-    <div class="card">Cloud – Azure, AWS</div>
-    <div class="card">Containers – Docker, Kubernetes</div>
-    <div class="card">IaC – ARM, Bicep, Terraform (Basic)</div>
-    <div class="card">Security – SonarQube, Fortify, JFrog Xray</div>
-    <div class="card">Monitoring – Zabbix, Grafana</div>
+    🔁 Designed and maintained <b>CI/CD pipelines using Jenkins</b> enabling automated builds,
+    testing, and deployments.<br><br>
+
+    🔐 Integrated <b>SonarQube, Fortify, and JFrog Xray</b> to enforce DevSecOps best practices.<br><br>
+
+    🤝 Collaborated with Development & QA teams to streamline testing and accelerate feedback cycles.<br><br>
+
+    🐧 Provided Linux operational support, troubleshooting, deployments, and monitoring.
   </div>
 </section>
 
 <section>
-  <div class="title">Experience Highlights</div>
+  <div class="title">DevOps Skillset</div>
+  <div class="grid skills">
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg">
+      <b>Jenkins</b><br>CI/CD Pipelines, Automation
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+      <b>Docker</b><br>Containerization, Image Optimization
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg">
+      <b>Kubernetes</b><br>Deployments, Rolling Updates
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
+      <b>Azure</b><br>Cloud Infrastructure
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+      <b>Git</b><br>GitLab, SVN, Branching
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+      <b>Linux</b><br>System Operations & Monitoring
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="title">What I Deliver</div>
   <div class="grid">
-    <div class="card">Designed and maintained CI/CD pipelines for reliable releases.</div>
-    <div class="card">Integrated security tools to enforce DevSecOps practices.</div>
-    <div class="card">Supported Azure & AWS deployments and Linux system operations.</div>
+    <div class="card">⚙️ Automated CI/CD pipelines reducing manual effort and failures</div>
+    <div class="card">🛡️ Secure pipelines with SAST & artifact scanning</div>
+    <div class="card">🚢 Containerized & deployed applications using Docker & Kubernetes</div>
+    <div class="card">📈 Improved stability through monitoring and automation</div>
   </div>
 </section>
 
 <section>
   <div class="title">Contact</div>
-  <p>
-    📧 Email: yourmail@example.com<br>
-    🔗 GitHub: https://github.com/yourusername<br>
-    💼 LinkedIn: https://linkedin.com/in/yourprofile
-  </p>
+  <div class="card">
+    📧 Email: anushanush9419@gmail.com<br><br>
+    🔗 GitHub: anushsrikanth.github.io<br><br>
+    💼 LinkedIn: https://linkedin.com/in/anush-srikanth
+  </div>
 </section>
 
 <footer>
-  © 2026 Anush | Hosted on GitHub Pages
+  © 2026 Anush | DevOps · Automation · Cloud Engineering
 </footer>
 
 </body>
