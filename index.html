@@ -1,200 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anush | DevOps Associate Consultant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anush | DevOps Associate Consultant</title>
 
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #0b1120;
-      color: #e5e7eb;
-      line-height: 1.7;
-    }
+header {
+  background: linear-gradient(135deg, #1e3a8a, #020617);
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #1e40af, #020617);
-      padding: 40px;
-    }
+header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  object-fit: cover;
+}
 
-    .hero {
-      display: flex;
-      gap: 50px;
-      align-items: center;
-      max-width: 1100px;
-      flex-wrap: wrap;
-    }
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
 
-    .hero img {
-      width: 260px;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-    }
+h1 span {
+  color: #38bdf8;
+}
 
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
+section {
+  padding: 50px 10%;
+}
 
-    h1 span {
-      color: #38bdf8;
-    }
+.title {
+  font-size: 1.8rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
 
-    section {
-      padding: 70px 10%;
-    }
+.box {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  margin-bottom: 20px;
+}
 
-    .title {
-      font-size: 2rem;
-      color: #38bdf8;
-      margin-bottom: 25px;
-    }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+}
 
-    .card {
-      background: #020617;
-      padding: 22px;
-      border-radius: 12px;
-      border: 1px solid #1e293b;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .skills img {
-      width: 45px;
-      margin-bottom: 10px;
-    }
-
-    .resume-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #38bdf8;
-      color: #020617;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #020617;
-      text-align: center;
-      padding: 25px;
-      border-top: 1px solid #1e293b;
-      font-size: 0.9rem;
-    }
-  </style>
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #1e293b;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="hero">
-    <img src="profile.jpg" alt="Anush Profile Photo">
-    <div>
-      <h1>Hi, I'm <span>Anush</span></h1>
-      <p><b>DevOps Associate Consultant</b><br>
-      CI/CD · Jenkins · Docker · Kubernetes · Cloud · DevSecOps</p>
-
-      <a class="resume-btn" href="Anush-Srikanth-Resume.pdf" target="_blank">
-        📄 Download Resume
-      </a>
-    </div>
-  </div>
+  <img src="profile.jpg" alt="Profile Photo">
+  <h1>Hi, I'm <span>Anush</span></h1>
+  <p>DevOps Associate Consultant<br>Jenkins • Docker • Kubernetes • Cloud</p>
+  <br>
+  <a class="button" href="Anush-Srikanth-Resume.pdf" target="_blank">📄 Download Resume</a>
 </header>
 
 <section>
   <div class="title">About Me</div>
-  <div class="card">
-    🚀 DevOps Associate Consultant at <b>Intellect Design Arena Ltd</b>, contributing to the
-    automation and optimization of DevOps workflows to improve release efficiency and system reliability.<br><br>
-
-    🔁 Designed and maintained <b>CI/CD pipelines using Jenkins</b> enabling automated builds,
-    testing, and deployments.<br><br>
-
-    🔐 Integrated <b>SonarQube, Fortify, and JFrog Xray</b> to enforce DevSecOps best practices.<br><br>
-
-    🤝 Collaborated with Development & QA teams to streamline testing and accelerate feedback cycles.<br><br>
-
-    🐧 Provided Linux operational support, troubleshooting, deployments, and monitoring.
+  <div class="box">
+    🚀 DevOps Associate Consultant at <b>Intellect Design Arena Ltd</b>, focused on automating and optimizing DevOps workflows.<br><br>
+    🔁 Designed and maintained <b>CI/CD pipelines using Jenkins</b>.<br><br>
+    🔐 Integrated <b>SonarQube, Fortify, and JFrog Xray</b> for DevSecOps.<br><br>
+    🤝 Worked closely with Development and QA teams to improve delivery quality.<br><br>
+    🐧 Supported Linux servers, deployments, troubleshooting, and monitoring.
   </div>
 </section>
 
 <section>
   <div class="title">DevOps Skillset</div>
-  <div class="grid skills">
-    <div class="card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg">
-      <b>Jenkins</b><br>CI/CD Pipelines, Automation
-    </div>
-
-    <div class="card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
-      <b>Docker</b><br>Containerization, Image Optimization
-    </div>
-
-    <div class="card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg">
-      <b>Kubernetes</b><br>Deployments, Rolling Updates
-    </div>
-
-    <div class="card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
-      <b>Azure</b><br>Cloud Infrastructure
-    </div>
-
-    <div class="card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-      <b>Git</b><br>GitLab, SVN, Branching
-    </div>
-
-    <div class="card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
-      <b>Linux</b><br>System Operations & Monitoring
-    </div>
+  <div class="skills">
+    <div class="box">CI/CD – Jenkins, GitLab</div>
+    <div class="box">Containers – Docker</div>
+    <div class="box">Orchestration – Kubernetes</div>
+    <div class="box">Cloud – Azure, AWS</div>
+    <div class="box">IaC – ARM, Bicep, Terraform (Basics)</div>
+    <div class="box">Security – SonarQube, Fortify, JFrog Xray</div>
+    <div class="box">Monitoring – Zabbix, Grafana</div>
+    <div class="box">Systems – Linux Administration</div>
   </div>
 </section>
 
 <section>
-  <div class="title">What I Deliver</div>
-  <div class="grid">
-    <div class="card">⚙️ Automated CI/CD pipelines reducing manual effort and failures</div>
-    <div class="card">🛡️ Secure pipelines with SAST & artifact scanning</div>
-    <div class="card">🚢 Containerized & deployed applications using Docker & Kubernetes</div>
-    <div class="card">📈 Improved stability through monitoring and automation</div>
-  </div>
+  <div class="title">What I Do</div>
+  <div class="box">⚙️ Automate CI/CD pipelines for reliable releases</div>
+  <div class="box">🛡️ Enforce security and quality gates</div>
+  <div class="box">🚢 Deploy containerized applications</div>
+  <div class="box">📈 Improve system stability and monitoring</div>
 </section>
 
 <section>
   <div class="title">Contact</div>
-  <div class="card">
+  <div class="box">
     📧 Email: anushanush9419@gmail.com<br><br>
-    🔗 GitHub: anushsrikanth.github.io<br><br>
-    💼 LinkedIn: https://linkedin.com/in/anush-srikanth
+    🔗 LinkedIn: https://linkedin.com/in/anush-srikanth
   </div>
 </section>
 
 <footer>
-  © 2026 Anush | DevOps · Automation · Cloud Engineering
+  © 2026 Anush | DevOps Portfolio
 </footer>
 
 </body>
